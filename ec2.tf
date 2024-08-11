@@ -14,16 +14,3 @@ resource "aws_subnet" "main" {
     Name = "venkysub"
   }
 }
-
-
-# resource "aws_instance" "web" {
-#   ami           = "ami-053db21b8e958f160"
-#   instance_type = "t3.micro"
-#   subnet_id = "subnet-0c65b566d4d56b4b7"
-
-
-#   tags = {
-    
-#     Name = "HelloWorld"
-#   }
-# }
