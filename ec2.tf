@@ -23,3 +23,12 @@ resource "aws_s3_bucket" "myth" {
     Environment = "Dev"
   }
 }
+
+resource "aws_s3_bucket" "mythilli" {
+  bucket = "mythvenn1"
+
+  tags = {
+    Name        = "mythvenn1 bucket"
+    Environment = "Dev"
+  }
+}
