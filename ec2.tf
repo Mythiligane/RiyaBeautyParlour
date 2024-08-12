@@ -14,3 +14,12 @@ resource "aws_subnet" "main" {
     Name = "venkysub"
   }
 }
+
+resource "aws_s3_bucket" "myth" {
+  bucket = "mythven"
+
+  tags = {
+    Name        = "mythven bucket"
+    Environment = "Dev"
+  }
+}
