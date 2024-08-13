@@ -24,4 +24,17 @@ resource "aws_s3_bucket" "myth" {
   }
 }
 
+resource "aws_security_group" "venkateshh1" {
+  name        = "venkysecurity"
+  description = "Allow TLS inbound traffic and all outbound traffic"
+  vpc_id      = aws_vpc.venkatesh.id
+
+  tags = {
+    Name = "venkysecurity"
+  }
+}
+
+
+  
+
 
